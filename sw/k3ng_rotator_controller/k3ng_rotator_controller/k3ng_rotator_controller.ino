@@ -10972,7 +10972,7 @@ void initialize_display(){
     #endif
 
     #ifdef OPTION_DISPLAY_VERSION_ON_STARTUP 
-      k3ngdisplay.print_center_timed_message((char *)"\x4B\x33\x4E\x47",(char *)"\x52\x6F\x74\x6F\x72\x20\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72",(char *)CODE_VERSION,SPLASH_SCREEN_TIME);
+      k3ngdisplay.print_center_timed_message((char *)"K3NG i SP6OM",(char *)"dla SP6PWT",4000);
     #else
       k3ngdisplay.print_center_timed_message((char *)"\x4B\x33\x4E\x47",(char *)"\x52\x6F\x74\x6F\x72\x20\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72",SPLASH_SCREEN_TIME);
     #endif

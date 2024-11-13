@@ -89,8 +89,8 @@ You can tweak these, but read the online documentation!
 #define AZ_MANUAL_ROTATE_CW_LIMIT 535  // add 360 to this if you go past 0 degrees (i.e. 180 CW after 0 degrees = 540)
 
 // Settings for OPTION_EL_MANUAL_ROTATE_LIMITS
-#define EL_MANUAL_ROTATE_DOWN_LIMIT -1
-#define EL_MANUAL_ROTATE_UP_LIMIT 181
+#define EL_MANUAL_ROTATE_DOWN_LIMIT -20
+#define EL_MANUAL_ROTATE_UP_LIMIT 16
 
 // Speed pot settings
 #define SPEED_POT_LOW 0
@@ -115,9 +115,9 @@ You can tweak these, but read the online documentation!
 
 #define TIMED_INTERVAL_ARRAY_SIZE 20
 
-#define LCD_COLUMNS 20 //16
-#define LCD_ROWS 4 //2       // this is automatically set below for HARDWARE_EA4TX_ARS_USB and HARDWARE_M0UPU
-#define LCD_UPDATE_TIME 1000           // LCD update time in milliseconds
+#define LCD_COLUMNS 16 //16
+#define LCD_ROWS 2 //2       // this is automatically set below for HARDWARE_EA4TX_ARS_USB and HARDWARE_M0UPU
+#define LCD_UPDATE_TIME 500           // LCD update time in milliseconds
 #define LCD_HHMM_CLOCK_POSITION LEFT          //LEFT or RIGHT
 #define LCD_HHMMSS_CLOCK_POSITION LEFT          //LEFT or RIGHT
 #define LCD_ALT_HHMM_CLOCK_AND_MAIDENHEAD_POSITION LEFT
@@ -139,9 +139,9 @@ You can tweak these, but read the online documentation!
 
 #define LCD_HEADING_ROW 2
 #define LCD_HEADING_FIELD_SIZE 20
-#define LCD_AZ_ONLY_HEADING_ROW 1
+#define LCD_AZ_ONLY_HEADING_ROW 0
 #define LCD_AZ_ONLY_HEADING_FIELD_SIZE 20
-#define LCD_EL_ONLY_HEADING_ROW 2
+#define LCD_EL_ONLY_HEADING_ROW 1
 #define LCD_EL_ONLY_HEADING_FIELD_SIZE 20
 #define LCD_STATUS_ROW 1
 #define LCD_STATUS_FIELD_SIZE 20
@@ -160,11 +160,11 @@ You can tweak these, but read the online documentation!
 
 #define DISPLAY_DECIMAL_PLACES 0
 
-#define AZ_POSITION_ROTARY_ENCODER_DEG_PER_PULSE 0.5
-#define EL_POSITION_ROTARY_ENCODER_DEG_PER_PULSE 0.5
+#define AZ_POSITION_ROTARY_ENCODER_DEG_PER_PULSE 0.25
+#define EL_POSITION_ROTARY_ENCODER_DEG_PER_PULSE 0.25
 
-#define AZ_POSITION_PULSE_DEG_PER_PULSE 0.5
-#define EL_POSITION_PULSE_DEG_PER_PULSE 0.5
+#define AZ_POSITION_PULSE_DEG_PER_PULSE 0.25
+#define EL_POSITION_PULSE_DEG_PER_PULSE 0.25
 
 #define NOT_PARKED_DETECT_TIME_MS 1000
 
@@ -389,5 +389,3 @@ You can tweak these, but read the online documentation!
 #define SATELLITE_CALC_STAGE_3_RESOLUTION_SECS 1
 
 #define NEXTION_GSC_STARTUP_DELAY 0
-
-
