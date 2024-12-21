@@ -10530,11 +10530,11 @@ void initialize_interrupts(){
   #endif // DEBUG_LOOP
 
   #ifdef FEATURE_AZ_POSITION_PULSE_INPUT
-    attachInterrupt(AZ_POSITION_PULSE_PIN_INTERRUPT, az_position_pulse_interrupt_handler, FALLING);
+    attachInterrupt(digitalPinToInterrupt(az_position_pulse_pin), az_position_pulse_interrupt_handler, FALLING);
   #endif // FEATURE_AZ_POSITION_PULSE_INPUT
 
   #ifdef FEATURE_EL_POSITION_PULSE_INPUT
-    attachInterrupt(EL_POSITION_PULSE_PIN_INTERRUPT, el_position_pulse_interrupt_handler, FALLING);
+    attachInterrupt(digitalPinToInterrupt(el_position_pulse_pin), el_position_pulse_interrupt_handler, FALLING);
   #endif // FEATURE_EL_POSITION_PULSE_INPUT
 
   #ifdef FEATURE_STEPPER_MOTOR

@@ -113,7 +113,7 @@
 #define OPTION_POSITION_PULSE_INPUT_PULLUPS  // define to enable weak pullups on position pulse inputs
 
 /* less often used features and options */
-//#define OPTION_GS_232B_EMULATION          // comment this out to default to Yaesu GS-232A emulation when using FEATURE_YAESU_EMULATION above
+// #define OPTION_GS_232B_EMULATION          // comment this out to default to Yaesu GS-232A emulation when using FEATURE_YAESU_EMULATION above
 // #define FEATURE_ROTATION_INDICATOR_PIN     // activate rotation_indication_pin to indicate rotation
 // #define FEATURE_LIMIT_SENSE
 // #define FEATURE_TIMED_BUFFER           // Support for Yaesu timed buffer commands
@@ -121,7 +121,7 @@
 // #define FEATURE_PARK
 // #define FEATURE_AUTOPARK               // Requires FEATURE_PARK
 // #define OPTION_AZ_MANUAL_ROTATE_LIMITS    // this option will automatically stop the L and R commands when hitting a CCW or CW limit (settings are AZ_MANUAL_ROTATE_CCW_LIMIT, AZ_MANUAL_ROTATE_CW_LIMIT) 
-// #define OPTION_EL_MANUAL_ROTATE_LIMITS    // (settings are EL_MANUAL_ROTATE_DOWN_LIMIT, EL_MANUAL_ROTATE_UP_LIMIT)
+#define OPTION_EL_MANUAL_ROTATE_LIMITS    // (settings are EL_MANUAL_ROTATE_DOWN_LIMIT, EL_MANUAL_ROTATE_UP_LIMIT)
 // #define OPTION_C_COMMAND_SENDS_AZ_AND_EL  // uncomment this when using Yaesu emulation with Ham Radio Deluxe
 // #define OPTION_DELAY_C_CMD_OUTPUT         // uncomment this when using Yaesu emulation with Ham Radio Deluxe
 // #define FEATURE_AZIMUTH_CORRECTION        // correct the azimuth using a calibration table in rotator_settings.h
